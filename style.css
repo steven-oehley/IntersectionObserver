@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  background-color: #0f172a;
+  padding: 5em;
+  font-family: 'Workbench';
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.card {
+  background-color: #164e63;
+  color: #eff6ff;
+  border: 2px solid #38bdf8;
+  border-radius: 0.25rem;
+  padding: 2em 4em;
+  transform: translate(100px);
+  opacity: 0;
+  transition: 150ms;
+  will-change: transform, opacity;
+}
+
+.show {
+  transform: translateX(0);
+  opacity: 1;
+}
